@@ -5,13 +5,15 @@ DROP TABLE congress_person CASCADE CONSTRAINTS;
 DROP TABLE bill CASCADE CONSTRAINTS;
 DROP TABLE vote_on CASCADE CONSTRAINTS;
 DROP TABLE sponsor CASCADE CONSTRAINTS;
+DROP VIEW sponsored_by CASCADE CONSTRAINTS;
 DROP SEQUENCE cp_id_seq;
 DROP SEQUENCE vote_id_seq;
 
--- SESSIONS 
-ALTER SESSION SET NLS_LANGUAGE=American;
-ALTER SESSION SET NLS_TERRITORY=America;
+COMMIT;
 
+-- SESSIONS 
+
+COMMiT;
 
 -- STATE TABLE 
 
@@ -64,11 +66,22 @@ ON DELETE CASCADE
 CREATE TABLE sponsor (
 cp_id NUMBER(3) NOT NULL,
 bill_name VARCHAR2(20) NOT NULL,
-CONSTRAINT sponsor_id_fk FOREIGN KEY(cp_id) REFERENCES comgress_person(cp_id)
+CONSTRAINT sponsor_id_fk FOREIGN KEY(cp_id) REFERENCES congress_person(cp_id)
 ON DELETE CASCADE,
-CONSTRAINT bill_name_fk FOREIGN KEY(bill_name) REFERENCES bill(bill_name)
+CONSTRAINT bill_name_fk_s FOREIGN KEY(bill_name) REFERENCES bill(bill_name)
 ON DELETE CASCADE
 );
+
+COMMIT;
+
+-- SPONSORED_BY VIEW
+
+CREATE VIEW sponsored_by AS
+SELECT c.cp_name , s.bill_name
+FROM congress_person c join sponsor s
+ON (c.cp_id = s.cp_id);
+
+COMMIT;
 
 -- SEQUENCE_CP_ID
 
@@ -87,3 +100,6 @@ START WITH 1
 MAXVALUE 999
 NOCACHE
 NOCYCLE;
+
+
+COMMIT;
