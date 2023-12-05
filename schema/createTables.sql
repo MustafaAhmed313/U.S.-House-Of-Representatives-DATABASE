@@ -8,6 +8,11 @@ DROP TABLE sponsor CASCADE CONSTRAINTS;
 DROP SEQUENCE cp_id_seq;
 DROP SEQUENCE vote_id_seq;
 
+-- SESSIONS 
+ALTER SESSION SET NLS_LANGUAGE=American;
+ALTER SESSION SET NLS_TERRITORY=America;
+
+
 -- STATE TABLE 
 
 CREATE TABLE state (
@@ -20,12 +25,12 @@ CONSTRAINT region_dom CHECK (region in ('Northeast' , 'Midwest' ,
 -- CONGRESS_PERSON TABLE
 
 CREATE TABLE congress_person (
-cp_id NUMBER(3) DEFAULT cp_id_seq.NEXTVAL PRIMARY KEY,
+cp_id NUMBER(3) PRIMARY KEY,
 cp_name VARCHAR2(200) NOT NULL,
 district VARCHAR2(200) NOT NULL,
 party CHAR NOT NULL,
-start_date DATE DEFAULT SYSDATE,
-state_name VARCHAR2(30),
+start_date DATE DEFAULT SYSDATE NOT NULL,
+state_name VARCHAR2(30) NOT NULL,
 CONSTRAINT party_ck CHECK (party in ('R' , 'D' , 'I' , 'O')),
 CONSTRAINT state_name_fk FOREIGN KEY(state_name) REFERENCES state(state_name)
 ON DELETE CASCADE
@@ -43,7 +48,7 @@ CONSTRAINT passed_or_failed_ck CHECK (passed_or_faild in ('Yes','No'))
 -- VOTE_ON TABLE
 
 CREATE TABLE vote_on (
-vote_id NUMBER(3) DEFAULT vote_id_seq.NEXTVAL PRIMARY KEY,
+vote_id NUMBER(3) PRIMARY KEY,
 vote_result VARCHAR2(10) NOT NULL,
 bill_name VARCHAR2(20) NOT NULL,
 cp_id NUMBER(3) NOT NULL,
