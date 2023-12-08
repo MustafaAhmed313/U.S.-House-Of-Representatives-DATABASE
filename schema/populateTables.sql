@@ -51,3 +51,4 @@ INSERT INTO state (state_name, region) VALUES ('Washington', 'Northeast');
 INSERT INTO state (state_name, region) VALUES ('West Virginia', 'Southeast');
 INSERT INTO state (state_name, region) VALUES ('Wisconsin', 'Northeast');
 INSERT INTO state (state_name, region) VALUES ('Wyoming', 'West');
+
