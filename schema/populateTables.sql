@@ -1388,7 +1388,6 @@ INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , s
 INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , state_name) VALUES 
 (cp_id_seq.NEXTVAL , 'Mike Gallagher'	,'8th',	'R'	,TO_DATE('OCT 10, 2017' , 'MON DD, YYYY'),	'Wisconsin');
 
-
 -- Bill RECORDS
 
 INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR26',	TO_DATE('09-FEB-2023','DD MON YYYY'),'Passed');

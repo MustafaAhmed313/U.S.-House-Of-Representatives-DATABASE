@@ -13,7 +13,7 @@ Please create the following files with their specified names
 
 ## Steps For Setup the Schema:
 
-1. run scripte `createTables.sql`
+1. run script `createTables.sql`
 2. run script `populateTables.sql`
 3. test your queris in `testQueries.sql`
 
