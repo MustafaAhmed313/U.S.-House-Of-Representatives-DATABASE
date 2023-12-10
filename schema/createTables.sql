@@ -72,7 +72,7 @@ COMMIT;
 
 -- SPONSORED_BY VIEW
 
-CREATE OR REPLACE VIEW sponsored_by AS
+CREATE OR REPLACE VIEW Sponsored_Bills AS
 SELECT c.cp_name , s.bill_name
 FROM congress_person c join sponsor s
 ON (c.cp_id = s.cp_id)
