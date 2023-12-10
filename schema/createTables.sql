@@ -11,10 +11,6 @@ DROP SEQUENCE vote_id_seq;
 
 COMMIT;
 
--- SESSIONS 
-
-COMMiT;
-
 -- STATE TABLE 
 
 CREATE TABLE state (
