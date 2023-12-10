@@ -104,8 +104,6 @@ INSERT INTO state (state_name, region) VALUES ('Wyoming', 'West');
 
 -- CONGRESS_PERSON RECORDS
 
-DELETE FROM congress_person ;
-
 INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , state_name) VALUES 
 (cp_id_seq.NEXTVAL , 'Barry Moore'	,'2nd',	'R'	,TO_DATE('OCT 10, 2010' , 'MON DD, YYYY'),	'Alabama');
 
@@ -1411,6 +1409,8 @@ INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR45',	TO_DA
 
 INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB2670',	TO_DATE('20-SEP-2023','DD MON YYYY'),'Failed');
 
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB159',	TO_DATE('24-JAN-2023','DD MON YYYY'),'Passed');
+
 -- SPONSER RECORDS
 
 INSERT INTO sponsor (cp_id,bill_name) VALUES (122 ,	'HJR26');
@@ -1661,7 +1661,19 @@ INSERT INTO sponsor (cp_id,bill_name) VALUES (3 ,	'HB2670');
 
 INSERT INTO sponsor (cp_id,bill_name) VALUES (418 ,	'HB2670');
 
----- VOTE_ON RECORDS
+INSERT INTO sponsor (cp_id,bill_name) VALUES (286 ,	'HB159');
+
+INSERT INTO sponsor (cp_id,bill_name) VALUES (409 ,	'HB159');
+
+INSERT INTO sponsor (cp_id,bill_name) VALUES (166 ,	'HB159');
+
+INSERT INTO sponsor (cp_id,bill_name) VALUES (37 ,	'HB159');
+
+INSERT INTO sponsor (cp_id,bill_name) VALUES (186 ,	'HB159');
+
+INSERT INTO sponsor (cp_id,bill_name) VALUES (341 ,	'HB159');
+
+-- VOTE_ON RECORDS
 
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  , 'No' ,'HJR26', 293 );
 
@@ -1980,4 +1992,85 @@ INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEX
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  , 'Absent' ,'HJR45', 93 );
 
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  , 'Absent' ,'HJR45', 194 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	362 ); 
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	215 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	372 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	36 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	268 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	165 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	174 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	18 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	133 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	400 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	300 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	272 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	402 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	158 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB2670' ,	261 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	229 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	153 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB2670' ,	5 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB2670' ,	238 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB2670' ,	394 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	358 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	386 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	78 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	292 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	215 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	372 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	20 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	408 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	42 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	145 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	380 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	424 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB159' ,	311 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'No'	,'HB159' ,	231 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	367 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	178 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	135 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Yes','HB159' ,	90 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB159' ,	102 );
+
+INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB159' ,	141 );
+
 
