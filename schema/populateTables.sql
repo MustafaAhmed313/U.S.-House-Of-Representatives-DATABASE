@@ -1388,27 +1388,28 @@ INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , s
 INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , state_name) VALUES 
 (cp_id_seq.NEXTVAL , 'Mike Gallagher'	,'8th',	'R'	,TO_DATE('OCT 10, 2017' , 'MON DD, YYYY'),	'Wisconsin');
 
+
 -- Bill RECORDS
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR26',	TO_DATE('09-FEB-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR26',	TO_DATE('09-FEB-2023','DD MON YYYY'),'Yes');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB346',	TO_DATE('25-JAN-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB346',	TO_DATE('25-JAN-2023','DD MON YYYY'),'Yes');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB3672',	TO_DATE('20-JUN-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB3672',	TO_DATE('20-JUN-2023','DD MON YYYY'),'Yes');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB5860',	TO_DATE('30-SEP-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB5860',	TO_DATE('30-SEP-2023','DD MON YYYY'),'Yes');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB1226',	TO_DATE('07-MAR-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB1226',	TO_DATE('07-MAR-2023','DD MON YYYY'),'Yes');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR39',	TO_DATE('24-MAY-2023','DD MON YYYY'),'Failed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR39',	TO_DATE('24-MAY-2023','DD MON YYYY'),'No');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR42',	TO_DATE('13-JUN-2023','DD MON YYYY'),'Failed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR42',	TO_DATE('13-JUN-2023','DD MON YYYY'),'No');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR45',	TO_DATE('21-JUN-2023','DD MON YYYY'),'Failed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR45',	TO_DATE('21-JUN-2023','DD MON YYYY'),'No');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB2670',	TO_DATE('20-SEP-2023','DD MON YYYY'),'Failed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB2670',	TO_DATE('20-SEP-2023','DD MON YYYY'),'No');
 
-INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB159',	TO_DATE('24-JAN-2023','DD MON YYYY'),'Passed');
+INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HB159',	TO_DATE('24-JAN-2023','DD MON YYYY'),'Yes');
 
 -- SPONSER RECORDS
 
