@@ -51,3 +51,29 @@ INSERT INTO state (state_name, region) VALUES ('Washington', 'Northeast');
 INSERT INTO state (state_name, region) VALUES ('West Virginia', 'Southeast');
 INSERT INTO state (state_name, region) VALUES ('Wisconsin', 'Northeast');
 INSERT INTO state (state_name, region) VALUES ('Wyoming', 'West');
+
+
+--  CONGRESS-PERSON RECORDS
+
+insert INTO congress_person(cp_id,cp_name ,district,party,start_date,state_name)
+VALUES(cp_id_seq.nextval , 'Jerry Carl', '1', 'R', TO_DATE(2021,'yy'), 'Alabama');
+
+insert INTO congress_person(cp_id,cp_name ,district,party,start_date,state_name)
+VALUES (cp_id_seq.nextval , 'Barry Moore' ,'2' ,'R',TO_DATE(2010,'yy')	,'Alabama');
+
+insert INTO congress_person(cp_id,cp_name ,district,party,start_date,state_name)
+VALUES (cp_id_seq.nextval , 'Mike Rogers' ,'3','R',	TO_DATE(2002,'yy'),'Alabama');
+
+insert INTO congress_person(cp_id,cp_name ,district,party,start_date,state_name)
+VALUES (cp_id_seq.nextval , 'Robert Aderholt','4','R',TO_DATE(2023,'yy'),'Alabama');
+
+insert INTO congress_person(cp_id,cp_name ,district,party,start_date,state_name)
+VALUES (cp_id_seq.nextval , 'Dale Strong','5','R',TO_DATE(1996,'yy'),'Alabama');
+
+
+
+--SELECT cp_id_seq.nextval ,CP_name,District,Party ,Start_date,State_name
+--FROM openrowset ('https://docs.google.com/spreadsheets/d/13EfRFFq6W7M8fv-WwForItuqyyHQueG6zCdmPRURU-U/edit#gid=84784048');
+
+
+
