@@ -40,7 +40,7 @@ CREATE TABLE bill (
 bill_name VARCHAR2(20) PRIMARY KEY,
 date_of_vote DATE NOT NULL,
 passed_or_faild VARCHAR2(10) NOT NULL,
-CONSTRAINT passed_or_failed_ck CHECK (passed_or_faild in ('Yes','No'))
+CONSTRAINT passed_or_faild_ck CHECK (passed_or_faild in ('Yes','No'))
 );
 
 -- VOTE_ON TABLE
