@@ -1391,7 +1391,7 @@ INSERT INTO congress_person (cp_id , cp_name , district , party , start_date , s
 (cp_id_seq.NEXTVAL , 'Mike Gallagher'	,'8th',	'R'	,TO_DATE('OCT 10, 2017' , 'MON DD, YYYY'),	'Wisconsin');
 
 
--- bill RECORDS
+-- Bill RECORDS
 
 INSERT INTO bill (bill_name,date_of_vote,passed_or_faild) VALUES ('HJR26',	TO_DATE('09-FEB-2023','DD MON YYYY'),'Passed');
 
@@ -1661,7 +1661,7 @@ INSERT INTO sponsor (cp_id,bill_name) VALUES (3 ,	'HB2670');
 
 INSERT INTO sponsor (cp_id,bill_name) VALUES (418 ,	'HB2670');
 
----- vote_on RECORDS
+---- VOTE_ON RECORDS
 
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  , 'No' ,'HJR26', 293 );
 
