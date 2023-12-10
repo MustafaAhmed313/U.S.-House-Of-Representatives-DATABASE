@@ -2072,5 +2072,3 @@ INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEX
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB159' ,	102 );
 
 INSERT INTO vote_on(vote_id,vote_result,bill_name,cp_id) VALUES (vote_id_seq.NEXTVAL  ,'Absent'	,'HB159' ,	141 );
-
-
